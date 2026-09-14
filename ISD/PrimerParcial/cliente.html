@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Petición GET</title>
+</head>
+<body>
+
+    <h1>Portafolio de Evidencias</h1>
+    <h3>Práctica: Pruebas de Arquitectura Cliente-Servidor mediante Peticiones HTTP GET</h3>
+
+    <hr>
+
+    <h2>1. Explicación del Proceso (¿Qué pasó?)</h2>
+    <p>
+        Se ejecutó con éxito el script 01cliente.js en el entorno de Node.js. Este código actúa en el rol de un Cliente HTTP que inicia un ciclo de comunicación asíncrona. Al inicializarse el proceso, el programa envía una solicitud formal utilizando el método GET hacia la ruta remota /api/talleres expuesta por el servidor backend en la nube.
+    </p>
+
+    <h2>2. Estado de Conectividad (¿Se conectó o no?)</h2>
+    <p>
+        Sí, la conexión se realizó con total éxito.El programa local resolvió de manera correcta la dirección del servidor remoto y estableció una comunicación segura bajo el protocolo HTTPS (sobre una capa de transporte TCP). El servidor procesó la petición satisfactoriamente, interactuó de manera interna con el servicio de la Base de Datos y devolvió un código de estado de respuesta estructurado 200 OK, completando el ciclo sin interrupciones ni excepciones de seguridad.
+    </p>
+
+    <h2>3. Elementos Obtenidos</h2>
+    <p>A partir del cuerpo del mensaje de respuesta del servidor web, se decodificaron y extrajeron en la consola local los siguientes elementos:</p>
+    <ul>
+        <li>Protocolo y URL resuelta: https://onrender.com</li>
+        <li>Métrica de Rendimiento (RTT): Tiempos de ida y vuelta de los datos que oscilaron entre los 1013 ms y 1119 ms.</li>
+        <li>Status HTTP: Código numérico 200 con el literal interpretado OK.</li>
+        <li>Colección de Datos (JSON Payload):Un arreglo estructurado en formato de texto JSON con tres objetos que corresponden a los talleres registrados en la base de datos:
+            <ul>
+                <li>"Introducción a Python" (Instructor: Ing. María López)</li>
+                <li>"Fundamentos de Redes" (Instructor: Ing. Carlos Ramírez)</li>
+                <li>"Diseño de Bases de Datos" (Instructor: Ing. Ana Torres)</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Evidencia en foto</h2>
+
+    <img src="../img/1Cliente.png" >
+    <img src="../img/2Cliente.png" >
+    <img src="../img/3Cliente.png">
+    
+
+</body>
+</html>
